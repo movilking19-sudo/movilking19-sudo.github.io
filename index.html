@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+    <h1>Sudoku Master</h1>
+    <button onclick="startGame()">Comenzar Juego</button>
+    <p style="margin-top:15px;">
+    <a href="privacy.html">Política de Privacidad</a>
+</p>
+
+</div>
+
+<div id="game" class="hidden">
+    <div class="hud">
+        <div class="info">Nivel: <span id="level">1</span></div>
+        <div class="info">Tiempo: <span id="time">00:00</span></div>
+        <div class="info">Errores: <span id="errors">0</span></div>
+        <div class="info">Score: <span id="score">0</span></div>
+    </div>
+
+    <div id="sudoku"></div>
+    <div id="number-panel"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
